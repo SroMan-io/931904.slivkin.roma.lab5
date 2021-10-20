@@ -1,0 +1,161 @@
+<!DOCTYPE html>
+<html>
+ <head>
+    <meta charset="utf-8">
+    <title>Frontend Task №5</title>
+	<style>
+
+body {
+	margin:0;
+}
+
+header{
+	text-align: center;
+	margin:0;
+}
+
+h1{
+	margin-top:0px;
+}
+
+h2{
+	margin-bottom:5px;
+	margin-top:0px;
+}
+
+.mainel {
+	margin-left:auto;
+	margin-right:auto;
+	background-color: #b7f5f5;
+	width:800px;
+	border-bottom: 3px black solid;
+	border-left: 2px #c7e6e6 solid;
+	border-right: 2px #c7e6e6 solid;
+	padding: 20px;
+	padding-top: 15px;
+}
+
+.mainel:hover {background-color: #ff5454;}
+
+.button {
+	text-align: center;
+	font-size: 12px;
+	padding:10px;
+	color: white;
+	background-color: #00bc00;
+	border: none;
+	margin-left:38%;
+	margin-top: 10px;
+	background-image: linear-gradient(to bottom,#36e549,#009f00);
+    background-image: -o-linear-gradient(to bottom,#36e549,#009f00);
+    background-image: -moz-linear-gradient(to bottom,#36e549,#009f00);
+    background-image: -webkit-linear-gradient(top,#36e549,#009f00);
+}
+
+.fon{
+	margin-top:-20px;
+	width:100%;
+	height:1000px;
+	background-color: rgba(255,255,255, 0.8);
+	position:fixed;
+	display: none;
+}
+
+.elbut {
+	margin:auto;
+	margin-top:18%;
+	padding:20px;
+	background-color: #e2ff74;
+	width:455px;
+	display: none;
+}
+
+	</style>
+
+</head>
+
+
+<body>
+
+<script>
+function display(num){
+	if (num == 1) {
+	  var elem = document.getElementById("n1") 
+	  elem.style.display = "block"
+	  var fon = document.getElementById("fonn") 
+	  fon.style.display = "block"
+	}
+	else if (num == 2) {
+	  var elem = document.getElementById("n2") 
+	  elem.style.display = "block"
+	  var fon = document.getElementById("fonn") 
+	  fon.style.display = "block"
+	}	
+	else if (num == 3){
+	  var elem = document.getElementById("n3") 
+	  elem.style.display = "block"
+	  var fon = document.getElementById("fonn") 
+	  fon.style.display = "block"
+	}
+}
+
+function destroy(){
+	  var elem3 = document.getElementById("fonn");
+	  elem3.style.display = "none";
+	  var elem = document.getElementById("n1") ;
+	  elem.style.display = "none";
+	  var elem1 = document.getElementById("n2") ;
+	  elem1.style.display = "none";
+	  var elem2 = document.getElementById("n3") ;
+	  elem2.style.display = "none";	
+}
+</script>
+
+<div id = "fonn" class = "fon" onclick = "destroy()">
+
+<div id = "n1" class = "elbut"> 
+<header><h1>Новость 1</h1></header>
+Новость 1: Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet asperiores aut nihil! Corporis debitis labore fugiat id, eligendi ratione veritatis!<br/>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis 
+ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur 
+perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+</div>
+
+<div id = "n2" class  = "elbut"> 
+<header><h1>Новость 2</h1></header>
+Новость 2: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, alias.<br/>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis 
+ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur 
+perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+</div>
+
+<div id = "n3" class  = "elbut"> 
+<header><h1>Новость 3</h1></header>
+Новость 3: Lorem ipsum dolor sit amet consectetur adipisicing elit. A, alias.<br/>
+Lorem ipsum dolor sit amet consectetur adipisicing elit. Aperiam hic, ipsa, ullam, cupiditate eveniet at voluptate corrupti commodi nobis 
+ratione voluptatem! Vel animi totam cupiditate doloribus ad ab exercitationem officia eveniet impedit? Deleniti quasi nisi consectetur 
+perspiciatis quibusdam nostrum, enim perferendis nam, magni molestias recusandae id libero vitae, repudiandae praesentium.
+</div>
+
+</div>
+
+<div class = "mainel">
+<h2>Новость 1</h2>
+<div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum susipit sed delectus facere veritatis autem quisquam unde nam doloribus? </div>
+<button class="button" onclick = "display(1)">Открыть всплывающее окно</button>
+</div>
+
+<div class = "mainel"> 
+<h2>Новость 2</h2>
+<div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum susipit sed delectus facere veritatis autem quisquam unde nam doloribus? </div>
+<button class="button" onclick = "display(2)">Открыть всплывающее окно</button>
+</div>
+
+<div class = "mainel"> 
+<h2>Новость 3</h2>
+<div> Lorem ipsum dolor sit amet consectetur, adipisicing elit. Beatae voluptatum susipit sed delectus facere veritatis autem quisquam unde nam doloribus? </div>
+<button class="button" onclick = "display(3)">Открыть всплывающее окно</button>
+</div>
+
+</body>
+</html>
